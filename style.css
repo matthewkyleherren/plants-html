@@ -461,3 +461,39 @@ a {
   width: 100%;
   position: absolute;
 }
+
+.home-hero {
+  width: 100vw;
+  height: 100vh;
+  background: url(assets/imgs/hero_bg.jpg);
+  background-size: cover;
+  object-fit: cover;
+  
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.text {
+  width: 100vw;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top: 25vh;
+
+}
+
+/* video background 
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+*/
