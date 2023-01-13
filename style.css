@@ -37,9 +37,7 @@
   --global-navbar-gray-alpha: black;
 }
 
-html {
-
-}
+html {}
 
 body {
   font-family: "Everett";
@@ -67,6 +65,7 @@ a {
   justify-content: center;
   background-color: var(--global-navbar-color-primary);
   height: 3rem;
+  top: 0
 }
 
 .mobile_navbar_list {
@@ -124,10 +123,13 @@ a {
     align-items: stretch;
     width: 100%;
     height: 50%;
-
+background-color: white;
     border-bottom: 1px solid black;
     height: 3rem;
     font-size: 0.8rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
   }
 
   .nav_list_right {
@@ -349,10 +351,12 @@ a {
 }
 
 .subheader {
-
+background-color: #ffffff;
   max-width: 100vw;
   overflow: hidden;
-  position: relative
+  position: fixed;
+  top: 3rem;
+  width: 100vw;
 }
 
 
@@ -401,9 +405,9 @@ a {
   text-transform: uppercase;
 
   height: 1.75rem;
-  
+
   display: inline-flex;
- 
+
   justify-content: center;
 
   align-items: center;
@@ -468,7 +472,7 @@ a {
   background: url(assets/imgs/hero_bg.jpg);
   background-size: cover;
   object-fit: cover;
-  
+
   left: 0;
   right: 0;
   top: 0;
@@ -478,8 +482,8 @@ a {
 
 .text {
   width: 100vw;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 25vh;
 
 }
