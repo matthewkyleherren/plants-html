@@ -39,11 +39,13 @@
   --global-navbar-gray-alpha: black;
 }
 
-html {}
 
+html { /* body won't work ¯\_(ツ)_/¯ */
+  scroll-snap-type: y mandatory;
+}
 body {
   font-family: "Everett";
-
+  scroll-snap-type: y mandatory;
 }
 
 a {
@@ -445,12 +447,18 @@ a {
 
 .grid {
   display: grid;
-  grid-gap: .5px;
+  grid-gap: 1px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   background: #BBB8A1;
-  margin-top:100vh;
   margin-left: -1px;
+  height: calc(100vh - 68.6px);
+  margin-top: 68.6px;
 }
+
+.first {
+
+  margin-top:100vh;
+  }
 
 @media screen and (max-width: 400px) {
   .grid {
@@ -471,6 +479,7 @@ a {
   left: 0;
   width: 100%;
   position: absolute;
+  height: 100%;
 }
 
 .home-hero {
@@ -903,7 +912,16 @@ body > header > nav.navbar_container.chameleon.scrolled > div.nav_list_center > 
           flex-direction: column;
       }
       }
+      .vport {
+        margin-top: calc(3rem + 21px);
+    }
 
+    section {
+      padding-top: calc(3rem + 21px);
+      height: 100vh;
+      width: 100vw;
+      scroll-snap-align: start;
+    }
       @font-face {
         font-family: 'Everett';
         src: url('https://uploads-ssl.webflow.com/6306fba67be473067560d79b/630aa6fa8e18aa5a517c4836_Everett-Medium.otf') format('opentype');
