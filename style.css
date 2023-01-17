@@ -447,24 +447,60 @@ a {
 
 .grid {
   display: grid;
-  grid-gap: 1px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* grid-gap: 1px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+grid-gap: 1px;
+grid-template-areas:
+"a a b c d"
+"a a e g h"
+"a a e g h";
   background: #BBB8A1;
   margin-left: -1px;
   height: calc(100vh - 68.6px);
   margin-top: 68.6px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
 }
+.reverse {
+  grid-template-areas:
+  "b c d a a"
+  "e g h a a"
+  "j k i a a";
+  }
 
+.prodhero {
+
+grid-area: a;
+}
 .first {
 
   margin-top:100vh;
   }
 
+/*   @media screen and (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+  } */
+/*   @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+  
+  }
+
+  @media screen and (min-width: 1220px) {
+   
+    .grid > div:nth-child(n+7) {
+display:none;
+
+    }
+  }
 @media screen and (max-width: 400px) {
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
-}
+} */
 
 .product-card {
   background-color: rgb(244, 241, 224);
