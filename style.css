@@ -63,11 +63,11 @@ a {
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  border-bottom: .5px solid rgba(0, 0, 0);
+  border-bottom: .5px solid #BBB8A1;
   justify-content: center;
        background-color: rgb(244, 241, 224);
 
-    border-bottom: .5px solid rgb(0, 0, 0);
+    border-bottom: .5px solid #BBB8A1;
 }
 
 .mobile_navbar_list {
@@ -127,7 +127,7 @@ a {
     height: 50%;
          background-color: rgb(244, 241, 224);
 
-    border-bottom: .5px solid rgb(0, 0, 0);
+    border-bottom: .5px solid #BBB8A1;
     height: 3rem;
     font-size: 0.8rem;
     position: fixed;
@@ -447,7 +447,7 @@ a {
   display: grid;
   grid-gap: .5px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  background: black;
+  background: #BBB8A1;
   margin-top:100vh;
   margin-left: -1px;
 }
@@ -727,7 +727,7 @@ body > header > nav.navbar_container.chameleon.scrolled > div.nav_list_center > 
       justify-items: center;
       align-items: stretch;
       width: 100vw;
-      border-bottom: .5px solid rgb(0, 0, 0);
+      border-bottom: .5px solid #BBB8A1;
            background-color: rgb(244, 241, 224);
       
     }
@@ -735,7 +735,7 @@ body > header > nav.navbar_container.chameleon.scrolled > div.nav_list_center > 
     .leftside {
     left: 0px;
     width: 100%;
-    border-bottom: .5px solid rgb(0, 0, 0);
+    border-bottom: .5px solid #BBB8A1;
          background-color: rgb(244, 241, 224);
          z-index: 99999;
     
@@ -811,8 +811,8 @@ body > header > nav.navbar_container.chameleon.scrolled > div.nav_list_center > 
         z-index: 1;
         height: 2.5em;
         width: 2.5em;
-        border-right: .5px solid rgb(0, 0, 0);
-        border-top: .5px solid rgb(0, 0, 0);
+        border-right: .5px solid #BBB8A1;
+        border-top: .5px solid #BBB8A1;
         position: absolute;
         right: 0;
         top: 0px;
