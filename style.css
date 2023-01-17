@@ -451,27 +451,36 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
 grid-gap: 1px;
 grid-template-areas:
-"a a b c d"
-"a a e g h"
-"a a e g h";
+"a a b c d f"
+"a a e g h l"
+"a a e g h m";
   background: #BBB8A1;
   margin-left: -1px;
   height: calc(100vh - 68.6px);
   margin-top: 68.6px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr ;
 }
 .reverse {
+  grid-template-columns: 1fr 1fr 1fr 1fr .5fr 2fr;
   grid-template-areas:
-  "b c d a a"
-  "e g h a a"
-  "j k i a a";
+  "b c d f a a"
+  "e g h l a a"
+
+  "e g h j a a";
+  
   }
 
 .prodhero {
-
+  
 grid-area: a;
 }
+
+.prodhero > img  {
+  object-fit: cover;
+  width: 100%;
+}
+
 .first {
 
   margin-top:100vh;
