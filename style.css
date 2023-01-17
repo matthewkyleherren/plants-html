@@ -445,7 +445,7 @@ a {
 
 .grid {
   display: grid;
-  grid-gap: 1px;
+  grid-gap: .5px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   background: black;
   margin-top:100vh;
