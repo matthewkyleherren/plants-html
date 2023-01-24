@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'rimowa-icons';
+    src: url('../fonts/rimowa-icons.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RimowaGroteskLight';
+    src: url('../fonts/RimowaGrotesk-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Favorit-Light';
+    src: url('../fonts/Favorit-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

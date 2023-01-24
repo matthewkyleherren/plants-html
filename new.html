@@ -1,0 +1,1650 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function onScriptLoad(script, params, scriptEventLoadedId, cb) {
+            let event = document.createEvent('Event');
+            event.initEvent([scriptEventLoadedId, 'loaded'].join('.'), false, false);
+            document.dispatchEvent(event);
+    
+            window.RI = window.RI || {lists: {libs: []}, loaded: []};
+            window.RI.loaded.push(scriptEventLoadedId);
+    
+            if (params.debug) {
+                if (scriptEventLoadedId.indexOf('all.') === -1) {
+                    console.log('script has been loaded: ' + script.src);
+                } else {
+                    console.log([scriptEventLoadedId, 'loaded'].join('.'));
+                }
+            }
+    
+            if (cb && 'function' === typeof cb) {
+                cb(script);
+            }
+        }
+    
+        function onScriptLoadError(script, params) {
+            if (params.debug) {
+                console.log('^^^ script load failed: ' + script.src) ;
+            }
+        }
+    
+        function runOnLibsReady(func, dependOnScriptId) {
+            dependOnScriptId = dependOnScriptId || 'alllibs';
+            dependOnScriptId = [dependOnScriptId.replace('all', 'all.'), 'loaded'].join('.');
+    
+            if ('function' === typeof func) {
+                if (window.RI && window.RI.loaded) {
+                    if (window.RI.loaded.indexOf(dependOnScriptId) !== -1) {
+                        func();
+                    } else {
+                        document.addEventListener(dependOnScriptId, func);
+                    }
+                } else {
+                    document.addEventListener(dependOnScriptId, func);
+                }
+            }
+        }
+    </script>
+    <script src="http://www.rimowa.com/on/demandware.static/Sites-Rimowa-Site/-/en_CH/v1673975967423/js/base.js" onload="(function(s){onScriptLoad(s, {debug: true}, 'base')})(this)" onerror="(function(s){onScriptLoadError(s, {debug: true})})(this)">
+    </script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Aluminium iPhone 12 &amp; 12 Pro Case | Silver | RIMOWA</title>
+    <meta name="robots" content="index, follow">
+    <link href="/on/demandware.static/Sites-Rimowa-Site/-/default/dw45fae9c9/images/favicon.ico" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="16x16" href="/on/demandware.static/Sites-Rimowa-Site/-/default/dw45fae9c9/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="/on/demandware.static/Sites-Rimowa-Site/-/default/dwb87536a9/images/touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/on/demandware.static/Sites-Rimowa-Site/-/default/dw42bff861/images/touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/on/demandware.static/Sites-Rimowa-Site/-/default/dwde5e2f1e/images/touch-icon-167x167.png">
+    <link rel="icon" sizes="192x192" href="/on/demandware.static/Sites-Rimowa-Site/-/default/dwbc595af2/images/favicon192b.png">
+    <meta name="description" content=" The RIMOWA Aluminium iPhone 12 Pro Case combines premium protection with our iconic groove design. Shop now on the RIMOWA official website. ">
+    <meta name="keywords" content="  RIMOWA official website">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="http://www.rimowa.com/on/demandware.static/Sites-Rimowa-Site/-/en_CH/v1673975967423/css/vendors.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="manifest" href="https://www.rimowa.com/ch/en/manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Rimowa">
+    <link rel="stylesheet" href="http://www.rimowa.com/on/demandware.static/Sites-Rimowa-Site/-/en_CH/v1673975967423/css/product/detail.css">
+    <link rel="stylesheet" href="/assets/css/new.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="https://www.rimowa.com/on/demandware.static/Sites-Rimowa-Site/-/en_CH/v1673975967423/css/style.css">
+    </head>
+<body>
+<div class="top-banner c-rimowa-container" role="banner">
+    <div class="top-banner__header u-flex u-flex--middle">
+      <a href="#main" class="skip-link"> Skip to Main Content
+      </a>
+      <a href="#footer" class="skip-link"> Skip to footer
+      </a>
+      <div class="menu-toggle-holder u-flex--one">
+        <div class="c-btn">
+          <button class="menu-toggle menu-icon rim-icon rim-icon-hamburger" type="button" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="megamenu">
+          </button>
+        </div>
+        <ul class="locale-select u-flex">
+          <li>
+            <a class="util-item dropdown link country-select country-dropdown-button-open" role="button" title="Please select your location" href="#" aria-haspopup="dialog" aria-controls="country_selection">
+              <span class="label-ship-to">
+                Ship to 
+              </span>
+              <span class="label-country">Switzerland
+              </span>
+            </a>
+          </li>
+          <li class="item locale-select__i">
+            <button class="js-lang-select c-option-list--selected label locale-select u-desktop-only" aria-haspopup="true" id="menu-lang-button-2" lang="en" aria-label="language English" aria-controls="menu-lang-2" aria-selected="true" control-id="ControlID-1">
+              English
+            </button>
+            <ul class="c-option-list" aria-labelledby="menu-lang-button-2" role="menu" id="menu-lang-2">
+              <li class="c-option-list--item" role="none">
+                <a href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=de&amp;c=CH" role="menuitem" aria-label="language Deutsch" lang="de">
+                  Deutsch
+                </a>
+              </li>
+              <li class="c-option-list--item" role="none">
+                <a href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=fr&amp;c=CH" role="menuitem" aria-label="language Français" lang="fr">
+                  Français
+                </a>
+              </li>
+              <li class="c-option-list--item" role="none">
+                <a href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=zh&amp;c=CH" role="menuitem" aria-label="language 中文（简体）" lang="zh">
+                  中文（简体）
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="primary-logo u-flex--one text--center">
+        <a class="primary-logo__link" href="/ch/en/home" title="RIMOWA official website Home">
+          <i class="rim-icon rim-icon-RIMOWA_Logo">
+          </i>
+        </a>
+      </div>
+      <div class="cart-search-holder u-flex--one">
+        <div class="cart-search-position js-header-customer-container">
+          <div class="header-search">
+            <div class="search u-flex__item">
+              <div class="u-flex u-flex--middle u-flex--justify-end u-flex--nowrap">
+                <button id="searchtoggle" type="button" aria-haspopup="dialog" aria-controls="search_popup" class="search__icon search-toggle" control-id="ControlID-2">
+                  <span class="visually-hidden">
+                    Search
+                  </span>
+                  <i class="rim-icon rim-icon-search" aria-hidden="true">
+                  </i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="user-infos login-link">
+            <div class="panel-picto">
+              <a href="/ch/en/account?isOverView=true" class="rim-icon rim-icon-user" title=" User: Sign in">
+              </a>
+            </div>
+            <div class="account-panel">
+              <div class="panel-title">
+                <a href="/ch/en/account?isOverView=true" title="My Account">
+                  My Account
+                </a>
+              </div>
+              <a href="/ch/en/account?isOverView=true" class="sign-in" title=" User: Sign in">
+                <span>Sign in
+                </span>
+              </a>
+              <a href="https://www.rimowa.com/ch/en/register" class="create-account js-create-account" title="Create Account">
+                <span>Create Account
+                </span>
+              </a>
+              <ul class="panel-list">
+                <li>
+                  <a title="Check the status of your orders or see past orders" href="/ch/en/myOrders">
+                    My Orders
+                  </a>
+                </li>
+                <li>
+                  <a title="Return a product" href="/ch/en/myOrders">
+                    Return a product
+                  </a>
+                </li>
+                <li>
+                  <a title="Register your RIMOWA luggage" href="/ch/en/customerservice">
+                    Register your RIMOWA luggage
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="user-infos wishlist-link--mobile">
+            <!-- whishlist -->
+            <a class="like-fav" href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Wishlist-ShowGuest">
+              WISHLIST (
+              <span class="js-wislist-m-count">0
+              </span>)
+            </a>
+          </div>
+          <a class="like-fav" href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Wishlist-ShowGuest">
+            <i aria-label="Your wishlist" class="rim-icon rim-icon-like">
+            </i>
+          </a>
+          <!-- Report any requested source code -->
+          <!-- Report the active source code -->
+          <div class="mini-cart-total js-minicart-total">
+            <button class="mini-cart-link mini-cart-empty" aria-haspopup="dialog" aria-controls="mini-cart" data-href="https://www.rimowa.com/ch/en/cart" control-id="ControlID-3">
+              <i class="rim-icon rim-icon-basket-empty" aria-label="View empty cart">
+              </i>
+            </button>
+          </div>
+          <div id="mini-cart" class="js-mini-cart mini-cart--header">
+            <div class="mini-cart-content" style="top: 69.5px;">
+              <div class="mini-cart-main">
+                <div class="mini-cart-header">
+                  <h2 class="mini-cart-name" tabindex="0">Your Shopping bag
+                  </h2>
+                  <button class="minicart-close-btn" aria-label="Close" control-id="ControlID-4">
+                  </button>
+                </div>
+                <div class="minicart-msg-empty">
+                  <p tabindex="0">You haven’t added anything yet 
+                  </p>
+                  <a href="/ch/en/home">Start Shopping
+                  </a>
+                  <img class="img-lazyload emptycart-img" data-src="/on/demandware.static/Sites-Rimowa-Site/-/default/dw8d47fcc9/images/emptycart-img.png" alt="You haven’t added anything yet ">
+                </div>
+                <form class="mini-cart-products mini-cart-products-reverse" action="https://www.rimowa.com/on/demandware.store/Sites-Rimowa-Site/en_CH/Cart-SubmitForm">
+                </form>
+                <div class="reco-container" data-action-url="https://www.rimowa.com/on/demandware.store/Sites-Rimowa-Site/en_CH/Product-GetRecoProductSkusDY?context=minicart">
+                </div>
+              </div>
+              <div class="mini-cart-footer">
+                <div class="mini-cart-totals">
+                  <div class="mini-cart-subtotals" tabindex="0">
+                    <span class="label">
+                      Total 
+                      <span class="item">(0 items)
+                      </span>
+                    </span>
+                    <span class="value">
+                      CHF 0,00
+                    </span>
+                  </div>
+                </div>
+                <div class="mini-cart-nav js-mini-cart-nav">
+                  <a href="/ch/en/checkout" class="c-btn-checkout js-btn--checkout">
+                    CHECKOUT NOW 
+                  </a>
+                  <div class="applepay-forms">
+                    <div class="form-row required">
+                      <label for="dwfrm_billing_billingAddress_email_emailAddress" id="dwfrm_billing_billingAddress_email_emailAddress_ada" title="Email">
+                        <span class="rim-label">Email*
+                        </span>
+                      </label>
+                      <div class="field-wrapper">
+                        <input class="required required" type="hidden" role="textbox" id="dwfrm_billing_billingAddress_email_emailAddress" name="dwfrm_billing_billingAddress_email_emailAddress" value="" placeholder="Email*" maxlength="50" regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" aria-required="true" aria-label="Email" aria-labelledby="dwfrm_billing_billingAddress_email_emailAddress_ada">
+                      </div>
+                      <div class="form-caption">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <label for="dwfrm_singleshipping_shippingAddress_addressFields_taxId" id="dwfrm_singleshipping_shippingAddress_addressFields_taxId_ada" title="TAX ID">
+                        <span class="rim-label">TAX ID
+                        </span>
+                      </label>
+                      <div class="field-wrapper">
+                        <input class="" type="hidden" role="textbox" id="dwfrm_singleshipping_shippingAddress_addressFields_taxId" name="dwfrm_singleshipping_shippingAddress_addressFields_taxId" value="" placeholder="TAX ID" maxlength="50" aria-label="TAX ID" aria-labelledby="dwfrm_singleshipping_shippingAddress_addressFields_taxId_ada">
+                      </div>
+                      <div class="form-caption">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="js-credit-card-payment-error-trigger" data-popin-content="credit-card-payment-error-content">
+                  </div>
+                  <div class="credit-card-payment-error-content hidden">
+                    <div class="credit-card-payment-error-text ptext--center c-collection-desc error-txt text-errorPopin" tabindex="0" role="text">
+                    </div>
+                    <div class="u-flex u-flex--column u-flex--center c-button-error">
+                      <button class="c-btn c-btn--secondary c-btn-error-defaut js-popin-close" type="button" control-id="ControlID-5">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                  <a href="/ch/en/cart" class="c-btn-basket">
+                    Modify your shopping cart
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="js-out-of-stock-popup-trigger" data-popin-content="js-out-of-stock-popup-content-customized">
+            </div>
+            <div class="js-out-of-stock-popup-content-customized js-out-of-stock-popup-content" style="display:none;">
+              <p class="popup-out-of-stock-content ptext--center c-collection-desc error-txt text-errorPopin">
+                Sorry, we are out of stock for below Product(s). Please modify you order or try again later.
+              </p>
+              <ul id="out-of-stock-product-customized">
+              </ul>
+              <p class="hidden" id="btn-modify-my-order">Modify my order
+              </p>
+              <div class="u-flex u-flex--column u-flex--center c-button-error configurator-page-link">
+                <a href="#" class="c-btn c-btn--dark">Modify my order
+                </a>
+              </div>
+            </div>
+            <div class="js-out-of-stock-popup-trigger" data-popin-content="js-out-of-stock-popup-content-std">
+            </div>
+            <div class="js-out-of-stock-popup-content js-out-of-stock-popup-content-std" style="display:none;" data-redirect="https://www.rimowa.com/ch/en/cart">
+              <p class="popup-out-of-stock-content ptext--center c-collection-desc error-txt text-errorPopin">
+                You have reached the maximum quantity for the following item(s). Please decrease the quantity before you checkout :
+              </p>
+              <ul id="out-of-stock-product">
+              </ul>    
+              <div class="u-flex u-flex--column u-flex--center c-button-error">
+                <button class="c-btn c-btn--secondary c-btn-error-defaut js-popin-close" type="button">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navigation trigger u-flex u-flex--fwcenter" role="navigation">
+      <button class="js-megamenu-close megamenu-close" type="button" aria-label="Close menu" aria-hidden="true" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+      </button>
+      <ul id="megamenu" class="megamenu level-1 js-nav-menu">
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="New">
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/new/" aria-haspopup="true" aria-expanded="false" aria-controls="content_new" accesskey="1">
+            Specials
+          </a>
+          <nav class="level-2 external sub-nav trigger" id="content_new" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu">
+              <li class="level-2-item level-2-item--megamenu-new-links isCatCar js-preselected has-sub-menu articles">
+                <span class="level-2-title">
+                  New
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 white-theme">
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="/urbanfarming/indoors" role="button">
+                        <div class="level-3-title">Indoor Farming
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="/plants/indoors/carniverous" role="button">
+                        <div class="level-3-title">Carniverous Plants
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="/sales/palm" role="button">
+                        <div class="level-3-title">Palm Sale
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                        <a class="level-3-link" href="/urbanfarming/indoors" role="button">
+                          <div class="level-3-title">Indoor Farming
+                          </div>
+                        </a>
+                      </li>
+                      <li class="level-3-item">
+                        <a class="level-3-link" href="/plants/indoors/carniverous" role="button">
+                          <div class="level-3-title">Carniverous Plants
+                          </div>
+                        </a>
+                      </li>
+                      <li class="level-3-item">
+                        <a class="level-3-link" href="/sales/palm" role="button">
+                          <div class="level-3-title">Palm Sale
+                          </div>
+                        </a>
+                      </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" href="/new/" role="button">
+                        All new products
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-new-essential-lite-ivory isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  ESSENTIAL LITE
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/luggage/colour/beige/check-in-l/82373704.html" data-gtm-menu-link-id="Discover the new colour">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw86eb50d0/images/260/megamenu/THUMBNAIL_MM_NEW_IVORY.jpg" class="img-lazyload loaded" width="260" height="160" alt="Never Still bags" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw86eb50d0/images/260/megamenu/THUMBNAIL_MM_NEW_IVORY.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Discover the new colour
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-new-unique isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  RIMOWA Unique
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/unique" data-gtm-menu-link-id="Discover Cognac">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwd4bae77b/images/260/megamenu/MM_NEW_THUMBNAIL_unique.jpg" class="img-lazyload loaded" width="260" height="160" alt="unique" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwd4bae77b/images/260/megamenu/MM_NEW_THUMBNAIL_unique.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Discover Cognac
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-new-never-still isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  NEVER STILL
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/never-still-collection/" data-gtm-menu-link-id="Explore the new Never Still design">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwdeedc4ca/images/260/megamenu/MM_NEW_THUMBNAIL_1.jpg" class="img-lazyload loaded" width="260" height="160" alt="never-still" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwdeedc4ca/images/260/megamenu/MM_NEW_THUMBNAIL_1.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Explore the new Never Still design
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="level-2-item link-to-all">
+              <a class="level-2-link" href="https://www.rimowa.com/ch/en/new/" data-gtm-menu-link-id="New">
+                Discover all 
+                <span>New
+                </span>
+              </a>
+            </div>
+          </nav>
+        </li>
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="Luggage">
+          <button class="has-sub-menu-back" aria-label="Back to Luggage section" aria-hidden="true">
+          </button>
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/luggage/" aria-haspopup="true" aria-expanded="false" aria-controls="content_luggage" accesskey="2">
+            Luggage
+          </a>
+          <div class="level-1-banner_mobile">
+            <img class="level-1-banner-img img-lazyload" alt="Luggage" data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwd2fa4229/images/MM_NEW_MOBILEonly.jpg">
+          </div>
+          <nav class="level-2 misc sub-nav trigger" id="content_luggage" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu">
+              <li class="level-2-item isCatCar js-preselected has-sub-menu">
+                <span class="level-2-title">Collection
+                </span>
+                <div class="sub-nav" id="content_Collection">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Original" href="https://www.rimowa.com/ch/en/original/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwcdbcebe5/images/category_megamenu/1_ORIGINAL.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Original" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwcdbcebe5/images/category_megamenu/1_ORIGINAL.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Original
+                          </div>
+                          <div class="level-3-title-caption">A travel icon
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Essential" href="https://www.rimowa.com/ch/en/essential/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw3b25b41b/images/category_megamenu/Essential.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Essential" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw3b25b41b/images/category_megamenu/Essential.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Essential
+                          </div>
+                          <div class="level-3-title-caption">Functional and lightweight
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Classic" href="https://www.rimowa.com/ch/en/classic/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwb6280a76/images/category_megamenu/Classic_New_image_V2.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Classic" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwb6280a76/images/category_megamenu/Classic_New_image_V2.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Classic
+                          </div>
+                          <div class="level-3-title-caption">Heritage inspired
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Essential Lite" href="https://www.rimowa.com/ch/en/essential-lite/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwc39e80d1/images/category_megamenu/essential_lite.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Essential Lite" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwc39e80d1/images/category_megamenu/essential_lite.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Essential Lite
+                          </div>
+                          <div class="level-3-title-caption">Minimal and lightweight
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Hybrid" href="https://www.rimowa.com/ch/en/hybrid/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw26111cd0/images/category_megamenu/Frame 394.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Hybrid" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw26111cd0/images/category_megamenu/Frame 394.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Hybrid
+                          </div>
+                          <div class="level-3-title-caption">Best of both worlds
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Essential Sleeve" href="https://www.rimowa.com/ch/en/essential-sleeve/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw83d57930/images/category_megamenu/megamenu_Valise_noir_carrousel.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Essential Sleeve" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw83d57930/images/category_megamenu/megamenu_Valise_noir_carrousel.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Essential Sleeve
+                          </div>
+                          <div class="level-3-title-caption">Business trip ready
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item isCatCar has-sub-menu">
+                <span class="level-2-title">Colour
+                </span>
+                <div class="sub-nav" id="content_Colour">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Beige" href="https://www.rimowa.com/ch/en/beige/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw403507d1/images/beige_cat_menu.png" class="level-3-img img-lazyload loaded" alt="Beige" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw403507d1/images/beige_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Beige
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Black" href="https://www.rimowa.com/ch/en/black/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw76e8640c/images/16/megamenu/black_cat_menu.png" width="260" height="auto" class="level-3-img img-lazyload loaded" alt="Black" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw76e8640c/images/16/megamenu/black_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Black
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Blue" href="https://www.rimowa.com/ch/en/blue/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw91eddacb/images/16/megamenu/blue_cat_menu2.png" width="16" height="auto" class="level-3-img img-lazyload loaded" alt="Blue" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw91eddacb/images/16/megamenu/blue_cat_menu2.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Blue
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Green" href="https://www.rimowa.com/ch/en/green/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw09a30f7e/images/16/megamenu/green_cat_menu.png" width="260" height="auto" class="level-3-img img-lazyload loaded" alt="Green" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw09a30f7e/images/16/megamenu/green_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Green
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Grey" href="https://www.rimowa.com/ch/en/grey/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw34b41ac1/images/16/megamenu/red_cat_menu_grey.png" width="16" height="auto" class="level-3-img img-lazyload loaded" alt="Grey" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw34b41ac1/images/16/megamenu/red_cat_menu_grey.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Grey
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Pink" href="https://www.rimowa.com/ch/en/pink/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwadd61f8e/images/16/megamenu/desertRose_cat_menu.png" width="260" height="auto" class="level-3-img img-lazyload loaded" alt="Pink" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwadd61f8e/images/16/megamenu/desertRose_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Pink
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Purple" href="https://www.rimowa.com/ch/en/purple/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw4e6b3245/images/category_megamenu/purple_cat_menu.jpg" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Purple" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw4e6b3245/images/category_megamenu/purple_cat_menu.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Purple
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Red" href="https://www.rimowa.com/ch/en/red/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw5e3ef23d/images/16/megamenu/red_cat_menu.png" width="260" height="auto" class="level-3-img img-lazyload loaded" alt="Red" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw5e3ef23d/images/16/megamenu/red_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Red
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Silver" href="https://www.rimowa.com/ch/en/silver/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw4925b759/images/16/megamenu/silver_cat_menu.png" width="16" height="auto" class="level-3-img img-lazyload loaded" alt="Silver" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw4925b759/images/16/megamenu/silver_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Silver
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Titanium" href="https://www.rimowa.com/ch/en/titanium/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwb64f27a9/images/16/megamenu/titanium1_cat_menu.png" width="260" height="auto" class="level-3-img img-lazyload loaded" alt="Titanium" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwb64f27a9/images/16/megamenu/titanium1_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Titanium
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="White" href="https://www.rimowa.com/ch/en/white/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw4429c0e8/images/16/megamenu/white_cat_menu2.png" width="16" height="auto" class="level-3-img img-lazyload loaded" alt="White" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw4429c0e8/images/16/megamenu/white_cat_menu2.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">White
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Yellow" href="https://www.rimowa.com/ch/en/yellow/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw51e2248e/images/16/megamenu/saffron_megamenu.png" width="260" height="auto" class="level-3-img img-lazyload loaded" alt="Yellow" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw51e2248e/images/16/megamenu/saffron_megamenu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Yellow
+                          </div>
+                          <div class="level-3-title-caption">Sub-colour category
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item isCatCar has-sub-menu">
+                <span class="level-2-title">Size
+                </span>
+                <div class="sub-nav" id="content_Size">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Cabin" href="https://www.rimowa.com/ch/en/cabin-size/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwed0b1d76/images/category_megamenu/Orig_Cabin_PF-FINAL.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Cabin" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwed0b1d76/images/category_megamenu/Orig_Cabin_PF-FINAL.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Cabin
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Check-In" href="https://www.rimowa.com/ch/en/check-in-size/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw0df46682/images/category_megamenu/Orig_CheckinM_PF-FINAL.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Check-In" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw0df46682/images/category_megamenu/Orig_CheckinM_PF-FINAL.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Check-In
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Trunk" href="https://www.rimowa.com/ch/en/large-luggage/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw55d32a68/Orig_Trunk_PF-FINAL_(002).png" class="level-3-img img-lazyload loaded" alt="Trunk" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw55d32a68/Orig_Trunk_PF-FINAL_(002).png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Trunk
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item has-sub-menu">
+                <span class="level-2-title">Material
+                </span>
+                <div class="sub-nav" id="content_Material">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Aluminium Cases" href="https://www.rimowa.com/ch/en/aluminium/">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwe48a2c1f/images/category_megamenu/aluminium_cat_menu.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Aluminium Cases" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwe48a2c1f/images/category_megamenu/aluminium_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Aluminium Cases
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Polycarbonate Cases" href="https://www.rimowa.com/ch/en/polycarbonate/">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwf03b7be3/images/category_megamenu/polycarbonate_cat_menu.png" width="33" height="52" class="level-3-img img-lazyload loaded" alt="Polycarbonate Cases" src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dwf03b7be3/images/category_megamenu/polycarbonate_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Polycarbonate Cases
+                          </div>
+                          <div class="level-3-title-caption">null
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item articles has-sub-menu">
+                <span class="level-2-title">TRAVEL TYPE
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 white-theme">
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/business-trip/">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw29d78c31/images/50/Megamenu/MM_NEW_THUMBNAIL_1.jpg" alt="BUSINESS TRIP" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw29d78c31/images/50/Megamenu/MM_NEW_THUMBNAIL_1.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="">BUSINESS TRIP
+                          </div>
+                          <div class="level-3-descr">Professional essentials for business travel
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/long-journeys/">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwe6fb4cf2/images/50/Megamenu/MM_NEW_THUMBNAIL_2.jpg" alt="LONG HAUL" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwe6fb4cf2/images/50/Megamenu/MM_NEW_THUMBNAIL_2.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="">LONG HAUL
+                          </div>
+                          <div class="level-3-descr">Extended getaways of a week or more
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/short-trips/">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw001657b2/images/50/Megamenu/MM_NEW_THUMBNAIL_3.jpg" alt="SHORT TRIP" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw001657b2/images/50/Megamenu/MM_NEW_THUMBNAIL_3.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="">SHORT TRIP
+                          </div>
+                          <div class="level-3-descr">Travelling light for 2-3 days
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item link-to-all">
+                <a class="level-2-link" href="https://www.rimowa.com/ch/en/luggage/" data-gtm-menu-link-id="Luggage">
+                  See all collection
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="Bags">
+          <button class="has-sub-menu-back" aria-label="Back to Bags section" aria-hidden="true">
+          </button>
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/bags/" aria-haspopup="true" aria-expanded="false" aria-controls="content_bags" accesskey="3">
+            Bags
+          </a>
+          <div class="level-1-banner_mobile">
+            <img class="level-1-banner-img img-lazyload" alt="Bags" data-src="https://www.rimowa.com/on/demandware.static/-/Sites-rimowa-storefront-final/default/dw8f81f88c/images/MOBILE_MM_bags.jpg">
+          </div>
+          <nav class="level-2 external sub-nav trigger" id="content_bags" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu">
+              <li class="level-2-item level-2-item--megamenu-bags-collection isCatCar js-preselected has-sub-menu articles">
+                <span class="level-2-title">
+                  Collection
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3">
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/never-still-collection/" role="button">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwf3ac2ae2/images/50/Megamenu/MM_BAG_thumbnail_NS.jpg" alt="Never Still travel bags" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwf3ac2ae2/images/50/Megamenu/MM_BAG_thumbnail_NS.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="">NEVER STILL
+                          </div>
+                          <div class="level-3-descr">Functional designs for daily life 
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/personal-collection/" role="button">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwe6ccd5da/images/50/Megamenu/MM_BAG_thumbnail_PERSONAL.jpg" alt="Personal" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwe6ccd5da/images/50/Megamenu/MM_BAG_thumbnail_PERSONAL.jpg" data-was-processed="true"> 
+                        <div class="level-3-title">
+                          <div class="">PERSONAL
+                          </div>
+                          <div class="level-3-descr">Portable pieces in iconic materials
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" href="https://www.rimowa.com/ch/en/bags/" role="button">
+                        See all bags
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-bags-shape isCatCar has-sub-menu articles">
+                <span class="level-2-title">
+                  Shape
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <div class="level-3-title">
+                        <div class="level-3-title-line">
+                          <a class="level-3-link" data-gtm-menu-link-id="Backpacks" href="https://www.rimowa.com/ch/en/backpacks/" role="button">Backpacks
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="level-3-item">
+                      <div class="level-3-title">
+                        <div class="level-3-title-line">
+                          <a class="level-3-link" data-gtm-menu-link-id="Briefcases" href="https://www.rimowa.com/ch/en/briefcases/" role="button">Briefcases
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="level-3-item">
+                      <div class="level-3-title">
+                        <div class="level-3-title-line">
+                          <a class="level-3-link" data-gtm-menu-link-id="Crossbody" href="https://www.rimowa.com/ch/en/cross-body-bags/" role="button">Crossbodies
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="level-3-item">
+                      <div class="level-3-title">
+                        <div class="level-3-title-line">
+                          <a class="level-3-link" data-gtm-menu-link-id="Hand Carry" href="https://www.rimowa.com/ch/en/hand-carry-bags/" role="button">Hand Carry
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="level-3-item">
+                      <div class="level-3-title">
+                        <div class="level-3-title-line">
+                          <a class="level-3-link" data-gtm-menu-link-id="Totes" href="https://www.rimowa.com/ch/en/tote-bags/" role="button">Totes
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="level-3-item">
+                      <div class="level-3-title">
+                        <div class="level-3-title-line">
+                          <a class="level-3-link" data-gtm-menu-link-id="weekender" href="https://www.rimowa.com/ch/en/bags/weekender/52500032.html" role="button">Weekender
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <div>
+                        <a class="level-3-link link-to-all" data-gtm-menu-link-id="Bags" href="https://www.rimowa.com/ch/en/bags/" role="button">
+                          <span id="cke_bm_742C" style="display: none;">&nbsp;
+                          </span>See 
+                          <span>all shapes
+                          </span> 
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-bags-colour isCatCar two-columns has-sub-menu articles">
+                <span class="level-2-title">
+                  Colour
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="" hidden="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Beige" href="https://www.rimowa.com/ch/en/search?cgid=beige" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwb2b8e3f4/images/50/Megamenu/beige_cat_menu.png" class="level-3-img img-lazyload" alt="Beige">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Beige
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Black" href="https://www.rimowa.com/ch/en/black/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwf506ca4d/images/50/Megamenu/black_cat_menu.png" class="level-3-img img-lazyload loaded" alt="Black" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwf506ca4d/images/50/Megamenu/black_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Black
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Black" href="https://www.rimowa.com/ch/en/blue/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw6b89fa39/images/50/Megamenu/blue_cat_menu2.png" class="level-3-img img-lazyload loaded" alt="Blue" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw6b89fa39/images/50/Megamenu/blue_cat_menu2.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Blue
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Green" href="https://www.rimowa.com/ch/en/green/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw65e381b0/images/50/Megamenu/green_cat_menu.png" class="level-3-img img-lazyload loaded" alt="Green" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw65e381b0/images/50/Megamenu/green_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Green
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Grey" href="https://www.rimowa.com/ch/en/grey/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw6a1a4840/images/50/Megamenu/red_cat_menu_grey.png" class="level-3-img img-lazyload loaded" alt="Grey" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw6a1a4840/images/50/Megamenu/red_cat_menu_grey.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Grey
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="" hidden="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Orange" href="https://www.rimowa.com/ch/en/orange/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwf8c41268/images/50/Megamenu/red_cat_menu_orange.png" class="level-3-img img-lazyload" alt="Orange">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Orange
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Pink" href="https://www.rimowa.com/ch/en/pink/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc58f131f/images/50/Megamenu/pink_megamenu.png" class="level-3-img img-lazyload loaded" alt="Rose" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc58f131f/images/50/Megamenu/pink_megamenu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Pink
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Pink" href="https://www.rimowa.com/ch/en/purple/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw5e0a0993/images/50/Megamenu/purple_cat_menu.jpg" class="level-3-img img-lazyload loaded" alt="Purple" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw5e0a0993/images/50/Megamenu/purple_cat_menu.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Purple
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Silver" href="https://www.rimowa.com/ch/en/silver/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwca3ea1a3/images/50/Megamenu/silver_cat_menu.png" class="level-3-img img-lazyload loaded" alt="Silver" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwca3ea1a3/images/50/Megamenu/silver_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Silver
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="White" href="https://www.rimowa.com/ch/en/white/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw88ea1fa4/images/50/Megamenu/white_cat_menu2.png" class="level-3-img img-lazyload loaded" alt="White" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw88ea1fa4/images/50/Megamenu/white_cat_menu2.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">White
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Yellow" href="https://www.rimowa.com/ch/en/yellow/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc26d776c/images/50/Megamenu/saffron_megamenu.png" class="level-3-img img-lazyload loaded" alt="Yellow" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc26d776c/images/50/Megamenu/saffron_megamenu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Yellow
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-bags-material isCatCar has-sub-menu articles">
+                <span class="level-2-title">
+                  Material
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Aluminium Cases" href="https://www.rimowa.com/ch/en/aluminium/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw2886d462/images/50/Megamenu/aluminium_cat_menu.png" class="level-3-img img-lazyload loaded" alt="Aluminium" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw2886d462/images/50/Megamenu/aluminium_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Aluminium
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Canvas" href="https://www.rimowa.com/ch/en/leather-canvas/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw7f6633a2/images/50/Megamenu/leather-canvas-catMegamenu.jpg" class="level-3-img img-lazyload loaded" alt="Canvas" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw7f6633a2/images/50/Megamenu/leather-canvas-catMegamenu.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Leather &amp; Canvas
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Polycarbonate Cases" href="https://www.rimowa.com/ch/en/polycarbonate/" role="button">
+                        <img data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw26929db3/images/50/Megamenu/polycarbonate_cat_menu.png" class="level-3-img img-lazyload loaded" alt="Polycarbonate" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw26929db3/images/50/Megamenu/polycarbonate_cat_menu.png" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title-line">Polycarbonate
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- <li class="level-3-item level-3-link-to-all">
+  <a class="level-3-link link-to-all" data-gtm-menu-link-id="Material" href="https://www.rimowa.com/ch/en/material/">
+  <span>All Material</span>
+  </a> 
+  </li> -->
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-bags-highlight-product-personalise-crossbody isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  BAG ACCESSORIES
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/bags-accessories/" data-gtm-menu-link-id="Customise your Cross-Body Bag">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw05793a69/images/260/megamenu/THUMBNAIL_BAG_ACCES_holiday_strap.jpg" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw05793a69/images/260/megamenu/THUMBNAIL_BAG_ACCES_holiday_strap.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Customise your Cross-Body Bag
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="level-2-item link-to-all">
+              <a class="level-2-link" href="https://www.rimowa.com/ch/en/bags/" data-gtm-menu-link-id="Bags">
+                See all collection
+              </a>
+            </div>
+          </nav>
+        </li>
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="Accessories">
+          <button class="has-sub-menu-back" aria-label="Back to Accessories section" aria-hidden="true">
+          </button>
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/accessories/" aria-haspopup="true" aria-expanded="false" aria-controls="content_accessories" accesskey="4">
+            Accessories
+          </a>
+          <nav class="level-2 plain-list sub-nav trigger" id="content_accessories" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu">
+              <li class="level-2-item isCatCar has-sub-menu">
+                <span class="level-2-title">iPhone Accessories
+                </span>
+                <div class="sub-nav" id="content_iPhone Accessories">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="iPhone Pro" href="https://www.rimowa.com/ch/en/iphone-pro-cases/" role="button">
+                        <div class="level-3-title">iPhone Pro
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="iPhone Pro Max" href="https://www.rimowa.com/ch/en/iphone-pro-max-cases/" role="button">
+                        <div class="level-3-title">iPhone Pro Max
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Airpods cases" href="https://www.rimowa.com/ch/en/accessories/iphone-accessories/" role="button">
+                        <div class="level-3-title">Airpods cases
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" data-gtm-menu-link-id="iPhone Accessories" href="https://www.rimowa.com/ch/en/iphone-accessories/" role="button">
+                        All iPhone accessories
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item isCatCar has-sub-menu">
+                <span class="level-2-title">Travel accessories
+                </span>
+                <div class="sub-nav" id="content_Travel accessories">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Organisers" href="https://www.rimowa.com/ch/en/organisers/" role="button">
+                        <div class="level-3-title">Organisers
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Suitcase Covers" href="https://www.rimowa.com/ch/en/suitcase-covers/" role="button">
+                        <div class="level-3-title">Suitcase Covers
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Garment Bags" href="https://www.rimowa.com/ch/en/garment-bags/" role="button">
+                        <div class="level-3-title">Garment Bags
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Luggage Tags" href="https://www.rimowa.com/ch/en/leather-luggage-tags/" role="button">
+                        <div class="level-3-title">Luggage Tags
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Luggage Belts" href="https://www.rimowa.com/ch/en/luggage-belts/" role="button">
+                        <div class="level-3-title">Luggage Belts
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Wheels" href="https://www.rimowa.com/ch/en/wheel-sets/" role="button">
+                        <div class="level-3-title">Wheels
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" data-gtm-menu-link-id="Travel accessories" href="https://www.rimowa.com/ch/en/travel-accessories/" role="button">
+                        All travel accessories
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item isCatCar has-sub-menu">
+                <span class="level-2-title">stickers
+                </span>
+                <div class="sub-nav" id="content_stickers">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Stickers" href="https://www.rimowa.com/ch/en/single-stickers/" role="button">
+                        <div class="level-3-title">Stickers
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="City Stickers" href="https://www.rimowa.com/ch/en/city-stickers/" role="button">
+                        <div class="level-3-title">City Stickers
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Sticker Sets" href="https://www.rimowa.com/ch/en/stickers-set/" role="button">
+                        <div class="level-3-title">Sticker Sets
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" data-gtm-menu-link-id="stickers" href="https://www.rimowa.com/ch/en/stickers/" role="button">
+                        All stickers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item has-sub-menu">
+                <span class="level-2-title">Eyewear
+                </span>
+                <div class="sub-nav" id="content_Eyewear">
+                  <ul class="level-3 js-level-3-list">
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Pilot" href="https://www.rimowa.com/ch/en/pilot-sunglasses/">
+                        <div class="level-3-title">Pilot
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Square" href="https://www.rimowa.com/ch/en/square-sunglasses/">
+                        <div class="level-3-title">Square
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Pantos" href="https://www.rimowa.com/ch/en/round-sunglasses/">
+                        <div class="level-3-title">Pantos
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Cat-Eye" href="https://www.rimowa.com/ch/en/cat-eye-sunglasses/">
+                        <div class="level-3-title">Cat-Eye
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" data-gtm-menu-link-id="Navigator" href="https://www.rimowa.com/ch/en/navigator-sunglasses/">
+                        <div class="level-3-title">Navigator
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" data-gtm-menu-link-id="Eyewear" href="https://www.rimowa.com/ch/en/eyewear/">
+                        All eyewear
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item subcat-banner has-sub-menu">
+                <span class="level-2-title">SPECIALITY
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 white-theme">
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/speciality/">
+                        <img class="level-3-img img-lazyload loaded" alt="Limited Edition" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwa46e20d0/images/260/MM_THUMBNAIL_SPECIALITY.jpg" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwa46e20d0/images/260/MM_THUMBNAIL_SPECIALITY.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <span class="level-3-title-link">Discover
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item link-to-all">
+                <a class="level-2-link" href="https://www.rimowa.com/ch/en/accessories/" data-gtm-menu-link-id="Accessories">
+                  Discover all 
+                  <span>Accessories
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="Gifts">
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/gifts/" aria-haspopup="true" aria-expanded="false" aria-controls="content_gifts" accesskey="5">
+            Gifts
+          </a>
+          <nav class="level-2 external sub-nav trigger" id="content_gifts" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu">
+              <li class="level-2-item level-2-item--megamenu-gifts-links isCatCar js-preselected has-sub-menu articles">
+                <span class="level-2-title">
+                  Gift Guides
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 white-theme">
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/unique" role="button">
+                        <div class="cat-nav-title">RIMOWA Unique
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/everyday-mobility/" role="button">
+                        <div class="cat-nav-title">Everyday mobility
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/aluminium/" role="button">
+                        <div class="cat-nav-title">Give them aluminium grooves
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/customisation-accessories/" role="button">
+                        <div class="level-3-title">Make it yours
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/books/" role="button">
+                        <div class="level-3-title">Books
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link" href="https://www.rimowa.com/ch/en/corporate-gifts" role="button">
+                        <div class="level-3-title">Corporate gifts
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" href="https://www.rimowa.com/ch/en/gifts/" role="button">
+                        All gifts
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-gifts-img-custo isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  GIFT GUIDE
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/unique" data-gtm-menu-link-id="RIMOWA Unique">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw6f7795e9/images/260/megamenu/THUMBNAIL_MM_GIFT_1_Unique.jpg" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw6f7795e9/images/260/megamenu/THUMBNAIL_MM_GIFT_1_Unique.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">RIMOWA Unique
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-gifts-img-gifts-2022-12 isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  GIFT GUIDE
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/gifts/" data-gtm-menu-link-id="Shop RIMOWA gifts">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc9ab6edf/images/260/megamenu/THUMBNAIL_GIFTGUIDE.jpg" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc9ab6edf/images/260/megamenu/THUMBNAIL_GIFTGUIDE.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Shop RIMOWA gifts
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-gifts-img-block3-corporategifts isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  CORPORATE GIFTS
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/corporate-gifts" data-gtm-menu-link-id="Gifts that make a difference">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw036b94c4/images/MM_THUMBNAIL_corpo.jpg" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw036b94c4/images/MM_THUMBNAIL_corpo.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Gifts that make a difference
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="level-2-item link-to-all">
+              <a class="level-2-link" href="https://www.rimowa.com/ch/en/gifts/" data-gtm-menu-link-id="Gifts">
+                Discover all 
+                <span>Gifts
+                </span>
+              </a>
+            </div>
+          </nav>
+        </li>
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="Services">
+          <a class="level-1-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="content_services" accesskey="6">
+            Services
+          </a>
+          <nav class="level-2 external sub-nav trigger" id="content_services" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu">
+              <li class="level-2-item level-2-item--megamenu-services-img-block1 isCatCar js-preselected js-level-2-img-block">
+                <span class="level-2-title">
+                  Store locator
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/storelocator" data-gtm-menu-link-id="Find the nearest store">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw3f7edea2/images/260/megamenu/Store.jpg" class="img-lazyload loaded" width="260" height="160" alt="seo alt" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw3f7edea2/images/260/megamenu/Store.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Find the nearest store
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-services-img-block2 isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  Rimowa Warranty
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/customerservice" data-gtm-menu-link-id="Register your RIMOWA">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwfc35e1ff/images/260/megamenu/MM_Services_RIMOWA_WARRANTY.png" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwfc35e1ff/images/260/megamenu/MM_Services_RIMOWA_WARRANTY.png" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Register your RIMOWA
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-services-img-block3 isCatCar js-level-2-img-block">
+                <span class="level-2-title">
+                  Repair service
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/repair/repair-services.html" data-gtm-menu-link-id="Repair your RIMOWA">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwb41b36bf/images/260/megamenu/Repair.jpg" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwb41b36bf/images/260/megamenu/Repair.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Repair your RIMOWA
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-services-links isCatCar contact-us">
+                <div class="level-2-item-orders">
+                  <span class="level-2-title">Orders
+                  </span>
+                  <div>
+                    <a class="level-3-link" href="/ch/en/myOrders" data-gtm-menu-link-id="Need help?" role="button">
+                      <div class="level-3-title">Manage your orders
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <span class="level-2-title">
+                  Need help?
+                </span>
+                <div class="sub-nav">
+                  <div class="level-3-item phone">
+                    <a class="level-3-link" href="tel:+41 435 478 609" role="button">
+                      Call us at :
+                      <br>+41 435 478 609
+                    </a>
+                  </div>
+                  <div class="level-3-item email">
+                    <a class="level-3-link" href="https://www.rimowa.com/ch/en/contactus" role="button">
+                      <div class="level-3-title">
+                        <span class="level-3-title-link">Contact us by email
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="has-sub-menu nav-item" data-gtm-menu-title="Discover">
+          <a class="level-1-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="content_discover" accesskey="7">
+            Discover
+          </a>
+          <nav class="level-2 external sub-nav trigger" id="content_discover" aria-label="Second level of navigation" style="min-height: inherit;">
+            <ul class="level-2-list js-nav-menu disproportion">
+              <li class="level-2-item level-2-item--megamenu-discover-img-block1 isCatCar js-preselected js-level-2-img-block">
+                <span class="level-2-title">
+                  Heritage
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/heritage" data-gtm-menu-link-id="Learn more about us">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw313352e6/images/260/megamenu/2-C.png" class="img-lazyload loaded" width="260" height="160" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw313352e6/images/260/megamenu/2-C.png" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Learn more about us
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-discover-video-howtopage isCatCar large js-level-2-img-block">
+                <span class="level-2-title">
+                  How it works
+                </span>
+                <div class="sub-nav">
+                  <a class="sub-nav-link" href="/ch/en/how-to-set-the-locks" data-gtm-menu-link-id="Set the locks on your RIMOWA suitcase">
+                    <div>
+                      <img data-src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw939508c2/images/MM_DISCOVER_HOWTO.jpg" class="img-lazyload loaded" width="260" height="auto" alt="" src="/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw939508c2/images/MM_DISCOVER_HOWTO.jpg" data-was-processed="true">
+                    </div>
+                    <div class="level-3-link-to-all">
+                      <span class="level-3-link link-to-all">Set the locks on your RIMOWA suitcase
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="level-2-item level-2-item--megamenu-discover-articles isCatCar has-sub-menu articles">
+                <span class="level-2-title">
+                  STORIES
+                </span>
+                <div class="sub-nav">
+                  <ul class="level-3 white-theme">
+                    <li class="level-3-item">
+                      <a class="level-3-link story" href="https://www.rimowa.com/ch/en/stories/berlin-city-guide.html" role="button">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw42c4524d/images/article/THUMBNAIL_MM_BCG.jpg" alt="" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw42c4524d/images/article/THUMBNAIL_MM_BCG.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title__story">RIMOWA's guide to Berlin
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link story" href="https://www.rimowa.com/ch/en/stories/richard-neutra-iconic-haus-kemper-visit.html" role="button">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw7d6a5ed9/images/article/THUMBNAIL_MM_HK.jpg" alt="" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dw7d6a5ed9/images/article/THUMBNAIL_MM_HK.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title__story">Inside the iconic Haus Kemper
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item">
+                      <a class="level-3-link story" href="https://www.rimowa.com/ch/en/stories/rimowa-x-rtfkt.html" role="button">
+                        <img class="level-3-img img-lazyload loaded" data-src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwcc16771c/images/article/THUMBNAIL_MM_RTFKT.jpg" alt="" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwcc16771c/images/article/THUMBNAIL_MM_RTFKT.jpg" data-was-processed="true">
+                        <div class="level-3-title">
+                          <div class="level-3-title__story">RIMOWA x RTFKT
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="level-3-item level-3-link-to-all">
+                      <a class="level-3-link link-to-all" href="https://www.rimowa.com/ch/en/stories" role="button">
+                        All the stories
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="nav-item" data-gtm-menu-title="Customise">
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/unique" accesskey="8">
+            Customise
+          </a>
+        </li>
+        <li class="nav-item" data-gtm-menu-title="RE-CRAFTED">
+          <a class="level-1-link" href="https://www.rimowa.com/ch/en/pre-owned-luggage" accesskey="9">
+            RE-CRAFTED
+          </a>
+        </li>
+        <li>
+          <span class="js-addhomescreen js-menu-addhomescreen" data-pwainstallpromptshowafter="30.0">
+            <span class="logo-information">
+              <span class="logo">
+                <img alt="Rimowa logo" src="https://www.rimowa.com/on/demandware.static/-/Library-Sites-RimowaSharedLibrary/default/dwc19291d5/images/rimowa_monogram.png">
+              </span>
+            </span>
+            <span class="information">
+              <p class="title">Get the RIMOWA app
+              </p>
+              <p class="text">Add RIMOWA Online Store to your home screen for faster and safer browsing.
+              </p>
+            </span>
+            <span class="prompt-btn-wrapper">
+              <p class="js-not-now-button" role="button">NOT NOW
+              </p>
+              <button type="button" class="js-add-button">INSTALL
+              </button>
+            </span>
+          </span>
+        </li>
+        <li class="menu-utility-user js-header-customer-container-mobile">
+          <div class="user-infos login-link">
+            <div class="panel-picto">
+              <a href="/ch/en/account?isOverView=true" class="rim-icon rim-icon-user" title=" User: Sign in">
+              </a>
+            </div>
+            <div class="account-panel">
+              <div class="panel-title">
+                <a href="/ch/en/account?isOverView=true" title="My Account">
+                  My Account
+                </a>
+              </div>
+              <a href="/ch/en/account?isOverView=true" class="sign-in" title=" User: Sign in">
+                <span>Sign in
+                </span>
+              </a>
+              <a href="https://www.rimowa.com/ch/en/register" class="create-account js-create-account" title="Create Account">
+                <span>Create Account
+                </span>
+              </a>
+              <ul class="panel-list">
+                <li>
+                  <a title="Check the status of your orders or see past orders" href="/ch/en/myOrders">
+                    My Orders
+                  </a>
+                </li>
+                <li>
+                  <a title="Return a product" href="/ch/en/myOrders">
+                    Return a product
+                  </a>
+                </li>
+                <li>
+                  <a title="Register your RIMOWA luggage" href="/ch/en/customerservice">
+                    Register your RIMOWA luggage
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="user-infos wishlist-link--mobile">
+            <!-- whishlist -->
+            <a class="like-fav" href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Wishlist-ShowGuest">
+              WISHLIST (
+              <span class="js-wislist-m-count">0
+              </span>)
+            </a>
+          </div>
+          <a class="like-fav" href="/on/demandware.store/Sites-Rimowa-Site/en_CH/Wishlist-ShowGuest">
+            <i aria-label="Your wishlist" class="rim-icon rim-icon-like">
+            </i>
+          </a>
+          <ul class="ship-to">
+            <li>
+              <a class="util-item dropdown link country-select country-dropdown-button-open" role="button" title="Please select your location" href="#" aria-haspopup="dialog" aria-controls="country_selection">
+                <span class="label-ship-to">
+                  Ship to 
+                </span>
+                <span class="label-country">Switzerland
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="item locale-select__i u-mobile-only">
+          <select name="selectlang" class="js-lang-select-mobile language-select js-language-select-header" aria-label="Select another language">
+            <option value="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=de&amp;c=CH" lang="de" aria-label="language Deutsch">
+              Deutsch
+            </option>
+            <option value="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=fr&amp;c=CH" lang="fr" aria-label="language Français">
+              Français
+            </option>
+            <option value="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=en&amp;c=CH" lang="en" aria-label="language English" selected="&quot;selected&quot;">
+              English
+            </option>
+            <option value="/on/demandware.store/Sites-Rimowa-Site/en_CH/Language-Select?l=zh&amp;c=CH" lang="zh" aria-label="language 中文（简体）">
+              中文（简体）
+            </option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+    <div class="js-minicart-overlay minicart-overlay" style="top: 69.5px;">
+    </div>
+  </div>
+</body>
+</html>
